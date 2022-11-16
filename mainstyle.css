@@ -1,0 +1,89 @@
+.sidenav {
+  height: 79%; 
+  width: 160px; 
+  position: fixed; 
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.5);
+  overflow-x: hidden; 
+  padding-top: 20px;
+  text-align: center;
+  margin-top: 100px;
+ 
+ 
+}
+
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+
+.sidenav a:hover {
+  color: #0C0404;
+
+#nav{
+font-family: Cousine;
+font-size: 40px;
+padding: 5px 50px;
+}
+
+#button{
+background-color:#FFD580;
+color:light blue;
+font-family: Cousine;
+padding:5px 50px;
+}
+
+.sidebar {
+height: 100%;
+width: 0;
+position: fixed;
+top: 0;
+left: 0;
+background-color: #FFD580;
+transition: 0.7s;
+padding-top: 60px;
+overflow-x: hidden;
+}
+
+.sidebar div {
+padding: 8px 8px 8px 30px;
+font-size: 15px;
+display: block;
+transition: 0.7s;
+cursor: pointer;
+}
+
+.sidebar .closebutton {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 35px;
+}
+
+.openbuttton {
+float: left;
+font-size: 38px;
+cursor: pointer;
+background-color: #f2f2f2;
+}
+
+.buttonA{
+background-color:#9F311C;
+color:white;
+padding:14px 16px;
+font-family: Oswald;
+}
+
+.buttonA:hover{
+    color: white;
+font-style:Cousine;
+font-variant: small-caps;
+cursor: pointer;
+}

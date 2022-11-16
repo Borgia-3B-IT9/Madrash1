@@ -1,0 +1,177 @@
+<DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title> MAPEH – CANTERO, CRUZ, ECO, LEPARDO, PANGAPALAN</title>
+	<link href="https://fonts.googleapis.com/css?family=Dosis|Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="mainstyle.css"/>
+	
+	<title>PT</title>
+	
+<style>
+body{
+background-color:#b6977d;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Verdana;
+	box-sizing: border-box;
+}
+div#sidebar{
+	background-color:#587cae;
+	width:357px;
+	height:500px;		
+	margin-left:20px;
+	margin-top:30px;
+	float:left; 
+	}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	transition: .5s;
+}
+div#logo{
+    float: left;
+    text-align: left;
+     line-height: 100px;
+	 }
+nav{
+	width: 100%;
+	height: 100%;
+	 background-color: rgba(0,0,0,.5);
+	opacity: 0.9;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 100px;
+	transition: .5s;
+
+}
+nav.hide{
+	transform: translateY(-100%);
+}
+nav ul{
+	display: flex;
+}
+nav ul li{
+	list-style: none;
+	line-height: 40px;
+	margin-right: 5px;
+	text-align: center;
+}
+nav ul li a{
+	display: block;
+	padding: 0 30px;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+	transition: .3s;
+	text-align
+}
+nav ul li a.active,
+nav ul li a:hover{
+	background:#E9DCC9;
+	color: #211f1f;
+}
+main,
+section{
+	width: 100%;
+	height: 100vh;
+}
+section.content1{
+	background: url(headermapeh.png)no-repeat center /cover;
+	background-attachment: fixed;
+}
+section.content2{
+	padding: 100px;
+	height: auto;
+}
+section.content2 p{
+	font-size: 18px;
+	font-family: Dosis;
+	font-weight:bold;
+	text-align: left;
+	
+}
+section.content2 h3{
+	font-size: 20px;
+	font-family: Verdana;
+	text-align: left;
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<img src="logo.png" width="120"></a>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sip.html">SIP</a></li>
+				<li><a href="background.html">Background and Significance</a></li>
+				<li><a href="mapeh.html">MAPEH</a></li>
+			</ul>
+		</nav>
+	
+	</header>
+	<a name="top"></a>
+	<div class="sidenav">
+	
+  <a href="https://www.facebook.com/montazer.lupon">contact person</a><br>
+  <a href="https://www.davaocity.gov.ph/departments/social-services/madrasah-comprehensive-development-and-promotion-program/">Madrasah Article</a>
+  <br><br><br><br><br><br><br><br><br>
+  <a href="#top" id="backtotop">Back to Top</a>
+</div>
+	<main>
+		<section class="content1"></section>
+		<section class="content2">
+		<center><blockquote>
+		 <div class="container">
+
+	
+
+		<a href ="https://youtu.be/jQGAqGARz-I" target = "_blank"><img src = "peimage.png" width = "600"></a>
+
+
+<br><br><br><br><hr style="width:99%;text-align:left;margin-left:0">
+
+	<img src="2.png" width="1000px"/>
+		</section>
+		
+		
+
+ 
+
+	</main>
+	
+
+	<script>
+		const nav = document.querySelector('nav');
+		let prevScrollpos = window.pageYOffset;
+
+		window.addEventListener('scroll', ()=>{
+			let currentScrollPos = window.pageYOffset;
+
+			if(prevScrollpos < currentScrollPos){
+				nav.classList.add('hide');
+			}else{
+				nav.classList.remove('hide');
+			}
+
+			prevScrollpos = currentScrollPos;
+		})
+	</script>
+</body>
+</html>
